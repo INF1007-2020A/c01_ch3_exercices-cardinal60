@@ -12,11 +12,11 @@ Traceback (most recent call last):
     output = [exercice.to_celsius(v) for v in values]
   File "test_exercice.py", line 68, in <listcomp>
     output = [exercice.to_celsius(v) for v in values]
-  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 29, in to_celsius
+  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 22, in to_celsius
     return to_celsius(temperature)
-  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 29, in to_celsius
+  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 22, in to_celsius
     return to_celsius(temperature)
-  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 29, in to_celsius
+  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 22, in to_celsius
     return to_celsius(temperature)
   [Previous line repeated 972 more times]
 RecursionError: maximum recursion depth exceeded
@@ -29,11 +29,11 @@ Traceback (most recent call last):
     output = [exercice.to_farenheit(v) for v in values]
   File "test_exercice.py", line 80, in <listcomp>
     output = [exercice.to_farenheit(v) for v in values]
-  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 33, in to_farenheit
+  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 26, in to_farenheit
     return to_farenheit(temperature)
-  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 33, in to_farenheit
+  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 26, in to_farenheit
     return to_farenheit(temperature)
-  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 33, in to_farenheit
+  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 26, in to_farenheit
     return to_farenheit(temperature)
   [Previous line repeated 972 more times]
 RecursionError: maximum recursion depth exceeded
@@ -44,19 +44,19 @@ FAIL: test_to_degrees (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 62, in test_to_degrees
     'Mauvais calcul de radians -> degres'
-AssertionError: Lists differ: [(0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0)] != [(79.0980174562859, 5.881047377154118, 29.6[197 chars]998)]
+AssertionError: Lists differ: [None, None, None, None] != [(79.0980174562859, 5.881047377154118, 29.[198 chars]998)]
 
 First differing element 0:
-(0, 0, 0)
+None
 (79.0980174562859, 5.881047377154118, 29.612494192724625)
 
-- [(0, 0, 0), (0, 0, 0), (0, 0, 0), (0, 0, 0)]
+- [None, None, None, None]
 + [(79.0980174562859, 5.881047377154118, 29.612494192724625),
 +  (-278.1960349125718, 48.23790524569176, 0.7750116145507491),
 +  (257.74504364071475, -15.297381557114704, 44.031235481811564),
 +  (213.95544569810457, -2.673258113725865, 23.057550624127998)] : Mauvais calcul de radians -> degres
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.006s
+Ran 5 tests in 0.007s
 
 FAILED (failures=1, errors=2)
