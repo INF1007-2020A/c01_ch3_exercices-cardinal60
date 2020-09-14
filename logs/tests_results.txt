@@ -12,11 +12,11 @@ Traceback (most recent call last):
     output = [exercice.to_celsius(v) for v in values]
   File "test_exercice.py", line 68, in <listcomp>
     output = [exercice.to_celsius(v) for v in values]
-  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 25, in to_celsius
+  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 26, in to_celsius
     return to_celsius(temperature)
-  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 25, in to_celsius
+  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 26, in to_celsius
     return to_celsius(temperature)
-  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 25, in to_celsius
+  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 26, in to_celsius
     return to_celsius(temperature)
   [Previous line repeated 972 more times]
 RecursionError: maximum recursion depth exceeded
@@ -30,13 +30,8 @@ Traceback (most recent call last):
   File "test_exercice.py", line 56, in <listcomp>
     output = [exercice.to_degrees(v) for v in values]
   File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 20, in to_degrees
-    to_degrees (deg + minutes * 60 + seconds * 3600)
-  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 20, in to_degrees
-    to_degrees (deg + minutes * 60 + seconds * 3600)
-  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 20, in to_degrees
-    to_degrees (deg + minutes * 60 + seconds * 3600)
-  [Previous line repeated 972 more times]
-RecursionError: maximum recursion depth exceeded
+    mod
+NameError: name 'mod' is not defined
 
 ======================================================================
 ERROR: test_to_farenheit (__main__.TestExercice)
@@ -46,16 +41,16 @@ Traceback (most recent call last):
     output = [exercice.to_farenheit(v) for v in values]
   File "test_exercice.py", line 80, in <listcomp>
     output = [exercice.to_farenheit(v) for v in values]
-  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 29, in to_farenheit
+  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 30, in to_farenheit
     return to_farenheit(temperature)
-  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 29, in to_farenheit
+  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 30, in to_farenheit
     return to_farenheit(temperature)
-  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 29, in to_farenheit
+  File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 30, in to_farenheit
     return to_farenheit(temperature)
   [Previous line repeated 972 more times]
 RecursionError: maximum recursion depth exceeded
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.011s
+Ran 5 tests in 0.007s
 
 FAILED (errors=3)
