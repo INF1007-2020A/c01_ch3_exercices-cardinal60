@@ -30,11 +30,11 @@ Traceback (most recent call last):
   File "test_exercice.py", line 56, in <listcomp>
     output = [exercice.to_degrees(v) for v in values]
   File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 20, in to_degrees
-    to_degrees (deg )
+    to_degrees (deg + minutes + seconds)
   File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 20, in to_degrees
-    to_degrees (deg )
+    to_degrees (deg + minutes + seconds)
   File "/home/runner/work/c01_ch3_exercices-cardinal60/c01_ch3_exercices-cardinal60/exercice.py", line 20, in to_degrees
-    to_degrees (deg )
+    to_degrees (deg + minutes + seconds)
   [Previous line repeated 972 more times]
 RecursionError: maximum recursion depth exceeded
 
@@ -56,6 +56,6 @@ Traceback (most recent call last):
 RecursionError: maximum recursion depth exceeded
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.011s
+Ran 5 tests in 0.010s
 
 FAILED (errors=3)
